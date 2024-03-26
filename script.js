@@ -64,3 +64,5 @@ const parser = StructuredOutputParser.fromNamesAndDescriptions({
     explanation: "detailed explanation of the example code provided",
 });
 const formatInstructions = parser.getFormatInstructions();
+
+console.log(await parser.parse(res));
