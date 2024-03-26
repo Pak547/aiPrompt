@@ -53,10 +53,8 @@ const prompt = new PromptTemplate({
   // Calls the "format" method on the "prompt" object and passes in the user input
   // format method returns a promise that resolves to the formatted string
   const promptInput = await prompt.format({
-    question: input
+    question: input,
   });
-
-  console.log(promptInput);
 
   // With a `StructuredOutputParser` we can define a schema for the output.
 const parser = StructuredOutputParser.fromNamesAndDescriptions({
